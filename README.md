@@ -1,5 +1,5 @@
 # Piedra-Papel-Tijeras
-Juego "Piedra, Papel o Tijeras", ideal para poner en practica las condicionales
+Juego "Piedra, Papel o Tijeras", ideal para poner en practica las condicional "IF)
 
 ## Probar app : https://johanjimenex.github.io/Piedra-Papel-Tijeras/
 
