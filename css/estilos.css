@@ -1,0 +1,152 @@
+body {
+	background-image: url(../img/pixel.png);
+	padding: 50px;
+}
+
+#contenedor {
+	margin: auto;
+	width: 600px;
+	height: auto;
+	text-align: center;
+	background-image: url("../img/fondo.png");
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 10px;
+	border: 2px solid white;
+}
+
+/* ====================titulos================= */
+
+h1 {
+	background-color: crimson;
+	color: aliceblue;
+	margin-bottom: 25px;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+	background-color: rgb(131, 29, 204);
+	color: white;
+	margin-bottom: 25px;
+	padding: 10px;
+}
+
+/* ========================PIEDRA PAPEL O TIJERAS============== */
+
+#menu {
+	background-color: rgb(221, 216, 216);
+	width: 400px;
+	margin: auto;
+	border-radius: 20px;
+	animation: menu 2s infinite;
+}
+
+@keyframes menu {
+	0% {
+		transform: translate(0);
+		background-color: aliceblue;
+	}
+	50% {
+		transform: translate(0px, -10px);
+		background-color: blueviolet;
+	}
+}
+
+#piedra {
+	background-image: url("../img/PiedraBN.png");
+}
+
+#piedra:hover {
+	background-image: url("../img/Piedra.png");
+}
+
+#papel {
+	background-image: url("../img/PapelBN.png");
+}
+
+#papel:hover {
+	background-image: url("../img/Papel.png");
+}
+
+#tijeras {
+	background-image: url("../img/TijerasBN.png");
+}
+
+#tijeras:hover {
+	background-image: url("../img/Tijeras.png");
+}
+
+#piedra:hover, #papel:hover, #tijeras:hover {
+	transform: rotate(90deg);
+	width: 115px;
+	height: 115px;
+}
+
+#piedra, #papel, #tijeras {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	transform: rotate(0);
+	transition: 0.5s;
+}
+
+/* =====================RESULTADO============================ */
+
+#contenedor2 {
+	background-color: rgb(87, 158, 152);
+	margin-top: 25px;
+	padding: 10px;
+}
+
+#colIzq, #colDer {
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid rgb(57, 124, 119);
+	padding: 10px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+/* ===================Tabla d epuntos===================== */
+
+#titulo {
+	background-color: rgb(255, 72, 59);
+	padding: 5px;
+}
+
+.col {
+	width: 49.55%;
+	display: inline-block;
+	background-color: aliceblue;
+	vertical-align: top;
+	height: 50px;
+}
+
+/* =========================REINICIAR===================== */
+
+#reiniciar {
+	color: white;
+	margin: auto;
+	padding: 10px;
+	cursor: pointer;
+	background-color: cornflowerblue;
+	transition: 0.5s;
+	margin-top: 15px;
+	transform: translteY(-10);
+	width: 350px;
+	border-radius: 15px 15px 0 0;
+}
+
+#reiniciar:hover {
+	background-color: rgb(219, 109, 160);
+	transform: translateY(-10px);
+	border-radius: 100px;
+	width: 200px;
+	display: inline-block;
+}

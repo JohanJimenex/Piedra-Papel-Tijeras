@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="/img/iconppt.png">
+	<title>Juego: Piedra, Papel o Tijeras</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+	<div id="contenedor">
+
+		<h1>PIEDRA, PAPEL O TIJERAS</h1>
+		<h2>¡Elige!</h2>
+		<div id="menu">
+			<div id="piedra" onclick='comparar("Piedra")'></div>
+			<div id="papel" onclick='comparar("Papel")'></div>
+			<div id="tijeras" onclick='comparar("Tijeras")'></div>
+		</div>
+
+		<div id="contenedor2">
+			<div id="colIzq">
+
+				<div><b> Tu elegiste:</b></div>
+				<span id="mostrarUsu"></span>
+
+				<div><b>La computadora eligió:</b></div>
+				<div id="mostrarCpu"></div>
+
+			</div>
+
+			<div id="colDer">
+
+				<span><b>Resultado:</b></span>
+				<div id="resultado"></div>
+
+			</div>
+
+		</div>
+
+		<div id="tablaP">
+			<div id="titulo">TABLA DE PUNTOS</div>
+			<div class="col">
+				<div>Puntos Jugador</div>
+				<div id="puntosJugador"></div>
+			</div>
+			<div class="col">
+				<div>Puntos Computadora</div>
+				<div id="puntosCPU"></div>
+			</div>
+		</div>
+
+		<!-- Llama a la funcion reinicio desde el javascript -->
+		<div id="reiniciar" onclick="reinicio()">REINICIAR</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>
