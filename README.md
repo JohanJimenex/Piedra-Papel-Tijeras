@@ -87,7 +87,6 @@ var msjGana = "Ganaste!";
 var msjPierde = "Perdiste!";
 var msjEmpate = "Es un empate!";
 
-// var resultado = document.getElementById("resultado");
 var resultado = document.querySelector("#resultado");
 
 //Funcion llamada desde el HTML con el metodo onclick(parametro) pasando como parametro la eleccion predispuesta desde el html
